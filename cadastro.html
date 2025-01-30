@@ -30,6 +30,50 @@
             <button type="submit">Cadastrar</button>
         </form>
     </div>
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Termos de Uso</h2>
+            <P>ATENÇÃO: Todos esses termos são Fictícios </P>
+            <p>1. Aceitação dos Termos</p>
+            <p>Ao utilizar este sistema de login e cadastro ("Sistema"), você concorda com os presentes Termos de Uso. Caso não concorde, não utilize o Sistema.</p>
+            <p>2. Cadastro e Conta</p>
+            <p>Para acessar determinadas funcionalidades, você precisará criar uma conta fornecendo informações precisas e atualizadas.</p>
+            <p>Você é responsável por manter a segurança de sua conta e senha. Não nos responsabilizamos por qualquer uso indevido de sua conta.</p>
+            <p>O uso de informações falsas ou enganosas pode resultar na suspensão ou exclusão da conta.</p>
+            <p>3. Responsabilidades do Usuário</p>
+            <p>Você concorda em não usar o Sistema para atividades ilegais, fraudulentas ou que violem direitos de terceiros.</p>
+            <p>É proibido tentar acessar áreas restritas do Sistema sem autorização.</p>
+            <p>Não nos responsabilizamos por danos causados pelo uso indevido do Sistema.</p>
+            <p>4. Modificações nos Termos</p>
+            <p>Podemos modificar estes Termos a qualquer momento. As alterações entrarão em vigor imediatamente após a publicação no Sistema. O uso contínuo do Sistema implica na aceitação das mudanças.</p>
+            <p>5. Encerramento da Conta</p>
+            <p>Podemos suspender ou encerrar sua conta caso você viole estes Termos ou utilize o Sistema de maneira inadequada.</p>
+            <p>6. Contato</p>
+            <p>Se tiver dúvidas sobre estes Termos, entre em contato conosco pelo e-mail: phenriquecandidooliveira@gmail.com.</p>
+        </div>
+    </div>
+    <script>
+        // Script para abrir e fechar o popup
+        var modal = document.getElementById("termsModal");
+        var link = document.querySelector(".termos a");
+        var span = document.getElementsByClassName("close")[0];
+
+        link.onclick = function(event) {
+            event.preventDefault();
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
