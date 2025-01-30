@@ -31,13 +31,14 @@ body {
 }
 
 .text {
-    padding: 70px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .Bem-vindo {
     color: #ca00ce;
     margin: 0 0 10px 0; /* Remove margens extras */
     font-size: 1.7rem; /* Ajuste o tamanho da fonte */
+    
 }
 
 .cad-text {
@@ -96,6 +97,7 @@ h2 {
 
 .container button:hover {
     background-color: #12a344;
+    
 }
 
 .Recuperar-senha, .criar-conta {
@@ -110,6 +112,7 @@ h2 {
 
 .criar-conta:hover, .Recuperar-senha:hover {
     color: #12a344;
+    transform: scale(1.07);
 }
 
 .termos {
@@ -138,6 +141,18 @@ h2 {
     color: #00b354; /* Cor do link ao passar o mouse */
 }
 
+.social img {
+    width: 40px; /* Tamanho inicial das imagens */
+    padding: 3px;
+    height: 40px; /* Tamanho inicial das imagens */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.social img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho das imagens em 20% */
+}
+
+
 @media (max-width: 600px) {
     .container {
         height: auto; /* Altura automática em telas pequenas */
@@ -161,4 +176,44 @@ h2 {
     .Recuperar-senha, .criar-conta {
         font-size: 0.9rem;
     }
+}
+
+/* Estilos para o popup de termos de uso */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro */
+}
+.modal p{
+    color: #000000;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
