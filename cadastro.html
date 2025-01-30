@@ -10,15 +10,23 @@
 
 <body>
     <div class="container">
-        <h1 class="cadastro">Crie sua conta</h1>
-        <h2>Informe seus Dados</h2>
+        <div class="cad-text">
+            <h1 class="cadastro">Crie sua conta</h1>
+            <h2>Informe seus Dados</h2>
+        </div>
         <form action="Cadastro.php">
             <input type="text" id="nome" name="nome" placeholder="Nome" required minlength="3" maxlength="50">
-            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required minlength="3" maxlength="50">
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required minlength="3"
+                maxlength="50">
             <input type="email" id="email" name="email" placeholder="E-mail" required minlength="3" maxlength="50">
             <input type="text" id="usuario" name="usuario" placeholder="Usuário" required minlength="3" maxlength="50">
             <input type="password" id="senha" name="senha" placeholder="Senha" required minlength="6" maxlength="50">
-            <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirmar Senha" required minlength="6" maxlength="50">
+            <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirmar Senha" required
+                minlength="6" maxlength="50">
+            <label for="aceitar-termos" class="termos">
+                <input type="checkbox" id="aceitar-termos" name="aceitar-termos" required>
+                Li e aceito os <a href="termos.html" target="_blank">termos de uso</a>.
+            </label>
             <button type="submit">Cadastrar</button>
         </form>
     </div>
