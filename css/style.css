@@ -12,36 +12,62 @@ body {
     align-items: center;
 }
 
-.container-login {
+.container {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 60px 40px;
+    padding: 100px 30px;
     border-radius: 10px;
     text-align: center;
     width: 100%;
-    max-width: 500px;
+    max-height: 550px;
+    max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    user-select: none;
 }
 
-h1 {
+.Bem-vindo {
     color: #ca00ce;
+    margin-bottom: 20px;
+    user-select: none;
+}
+.cadastro {
+    color: #ca00ce;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    user-select: none;
+}
+h2 {
+    color: #ca00ce;
+    margin: 10px 0px 20px 0px;
+    user-select: none;
 }
 
-.container-login input {
+.container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.container input {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 1rem;
     width: calc(100% - 30px);
     margin-bottom: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    
+
 }
 
-.container-login input:focus {
+.container input:focus {
     outline: none;
     border-color: #00b388;
     box-shadow: 0 0 0 2px rgba(0, 179, 136, 0.2);
 }
 
-.container-login button {
+.container button {
     background-color: #14c54f;
     color: #000000;
     border: none;
@@ -52,9 +78,10 @@ h1 {
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s ease;
+    margin: 0; 
 }
 
-.container-login button:hover {
+.container button:hover {
     background-color: #12a344;
 }
 
@@ -64,18 +91,41 @@ h1 {
     margin: 20px 0;
     color: blue;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
 .criar-conta:hover, .Recuperar-senha:hover {
     color: #12a344;
 }
 
-/*.criar-conta {
-    display: block;
-    text-align: center;
-    margin: 20px 0;
-    color: blue;
-    text-decoration: none;
-    font-size: 1.2rem;
-}*/
+@media (max-width: 600px) {
+    .container-login {
+        height: 100vh;
+        max-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container-login input {
+        
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .container-login button {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .Recuperar-senha, .criar-conta {
+        font-size: 0.9rem;
+    }
+}
