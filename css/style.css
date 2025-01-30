@@ -14,31 +14,47 @@ body {
 
 .container {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 100px 30px;
+    height: 630px; /* Altura exata */
+    width: 100%;
+    max-width: 400px;
     border-radius: 10px;
     text-align: center;
-    width: 100%;
-    max-height: 550px;
-    max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Garante que o padding seja incluído na altura */
+    
+}
+
+.text {
+    padding: 70px 0 0 0;
 }
 
 .Bem-vindo {
     color: #ca00ce;
-    margin-bottom: 20px;
-    user-select: none;
+    margin: 0 0 10px 0; /* Remove margens extras */
+    font-size: 1.7rem; /* Ajuste o tamanho da fonte */
 }
+
+.cad-text {
+    padding: 0;
+}
+
 .cadastro {
     color: #ca00ce;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    user-select: none;
+    margin: 0; /* Remove margens extras */
+    font-size: 2rem; /* Ajuste o tamanho da fonte */
 }
+
 h2 {
     color: #ca00ce;
-    margin: 10px 0px 20px 0px;
-    user-select: none;
+    margin: 0 0 15px 0; /* Ajuste as margens */
+    font-size: 1.4rem; /* Ajuste o tamanho da fonte */
+    padding: 0;
 }
 
 .container label {
@@ -56,9 +72,6 @@ h2 {
     width: calc(100% - 30px);
     margin-bottom: 20px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-
-    
-
 }
 
 .container input:focus {
@@ -78,7 +91,7 @@ h2 {
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s ease;
-    margin: 0; 
+    margin: 0;
 }
 
 .container button:hover {
@@ -99,29 +112,49 @@ h2 {
     color: #12a344;
 }
 
+.termos {
+    display: flex;
+    align-items: center; /* Alinha o checkbox e o texto verticalmente */
+    gap: 5px; /* Reduz o espaçamento entre o checkbox e o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do checkbox */
+    color: #333; /* Cor do texto */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    
+}
+
+.termos input[type="checkbox"] {
+    margin: 0;;
+    width: auto;
+    height: auto;
+}
+
+.termos a {
+    color: #007BFF; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+.termos a:hover {
+    color: #00b354; /* Cor do link ao passar o mouse */
+}
+
 @media (max-width: 600px) {
-    .container-login {
-        height: 100vh;
-        max-width: 100%;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .container {
+        height: auto; /* Altura automática em telas pequenas */
+        padding: 20px 10px; /* Padding menor */
     }
 
     h1 {
         font-size: 1.5rem;
     }
 
-    .container-login input {
-        
-        padding: 15px;
+    .container input {
+        padding: 10px;
         font-size: 0.9rem;
     }
 
-    .container-login button {
-        padding: 0.5rem 0.7rem;
+    .container button {
+        padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
 
