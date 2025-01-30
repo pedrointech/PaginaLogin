@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: linear-gradient(rgba(98, 0, 146, 0.6), rgba(77, 0, 86, 0.7)), url("triton.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 60px 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ca00ce;
+}
+
+.container-login input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: calc(100% - 30px);
+    margin-bottom: 20px;
+}
+
+.container-login input:focus {
+    outline: none;
+    border-color: #00b388;
+    box-shadow: 0 0 0 2px rgba(0, 179, 136, 0.2);
+}
+
+.container-login button {
+    background-color: #14c54f;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.container-login button:hover {
+    background-color: #12a344;
+}
+
+.Recuperar-senha, .criar-conta {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: blue;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.criar-conta:hover, .Recuperar-senha:hover {
+    color: #12a344;
+}
+
+/*.criar-conta {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: blue;
+    text-decoration: none;
+    font-size: 1.2rem;
+}*/
