@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <div class="container-login">
-        <h1>Seja Bem vindo de volta!</h1>
+    <div class="container">
+        <h1 class="Bem-vindo">Seja Bem-vindo de volta!</h1>
         <form action="paginalogin.php" method="POST">
-            <input type="text" name="usuario" placeholder="Usuário" required> 
-            <input type="password" name="senha" placeholder="Senha" required>
+            <input type="text" id="usuario" name="usuario" placeholder="Usuário" required minlength="3" maxlength="50">
+            <input type="password" id="senha" name="senha" placeholder="Senha" required minlength="6" maxlength="50">
+            
             <a href="recuperar-senha.html" class="Recuperar-senha">Esqueci minha senha</a>
             <button type="submit">Login</button>
         </form>
