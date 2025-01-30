@@ -14,7 +14,7 @@
             <h1 class="cadastro">Crie sua conta</h1>
             <h2>Informe seus Dados</h2>
         </div>
-        <form action="Cadastro.php">
+        <form id="cadastroForm" action="Cadastro.php" method="POST" onsubmit="return validatePasswords()">
             <input type="text" id="nome" name="nome" placeholder="Nome" required minlength="3" maxlength="50">
             <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required minlength="3"
                 maxlength="50">
@@ -72,6 +72,17 @@
             if (event.target == modal) {
                 modal.style.display = "none";
             }
+        }
+
+        // Validação de senhas
+        document.getElementById("cadastroForm").onsubmit = function() {
+            var senha = document.getElementById("senha").value;
+            var confirmarSenha = document.getElementById("confirmar-senha").value;
+            if (senha !== confirmarSenha) {
+                alert("As senhas não coincidem. Por favor, tente novamente.");
+                return false;
+            }
+            return true;
         }
     </script>
 </body>

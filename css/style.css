@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #ffffff;
-    background: linear-gradient(rgba(98, 0, 146, 0.6), rgba(77, 0, 86, 0.7)), url("triton.png");
+    background: linear-gradient(rgba(168, 19, 176, 0.822), rgba(121, 14, 154, 0.994)), url("triton.png");
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -155,7 +155,7 @@ h2 {
 
 @media (max-width: 600px) {
     .container {
-        height: auto; /* Altura automática em telas pequenas */
+        height: 100%; /* Altura automática em telas pequenas */
         padding: 20px 10px; /* Padding menor */
     }
 
