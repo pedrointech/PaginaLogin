@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1 class="Bem-vindo">Recuperar Senha</h1>
+            <h2>Informe seu e-mail</h2>
+            <br>
+        </div>
+        <form id="recuperarSenhaForm" action="*" method="POST" onsubmit="return showConfirmationMessage()">
+            <input type="email" id="email" name="email" placeholder="E-mail" required minlength="3" maxlength="50">
+            <button type="submit">Recuperar Senha</button>
+        </form>
+        <div id="confirmationMessage" style="display:none; color: green; margin-top: 20px;">
+            Um e-mail de recuperação foi enviado. <br><br>
+            Verifique sua caixa de entrada para mais instruções.
+        </div>
+       
+    </div>
+    <script>
+        function showConfirmationMessage() {
+            document.getElementById("confirmationMessage").style.display = "block";
+            return false; // Impede o envio do formulário para fins de demonstração
+        }
+    </script>
+</body>
+</html>
