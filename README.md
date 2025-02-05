@@ -11,7 +11,7 @@ Este projeto é uma página de login e cadastro com um design moderno e responsi
 - [x] Funcionalidade de login
 - [x] Funcionalidade de cadastro
 - [x] Popup de termos de uso
-- [ ] Página de recuperação de senha (não iniciado)
+- [x] Página de recuperação de senha
 
 ### Backend
 - [ ] Integração com backend (não iniciado)
